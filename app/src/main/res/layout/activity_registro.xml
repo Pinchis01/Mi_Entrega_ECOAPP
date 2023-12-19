@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro">
+
+    <ImageView
+        android:id="@+id/Fondopantalla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_verde2" />
+
+    <ImageView
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/devolver" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="onClick2"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="50dp"
+            android:text="REGISTRO" />
+
+        <TextView
+            android:id="@+id/nombrecompl"
+            style="@style/textregis1"
+
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/casillaname"
+            style="@style/textregis2"
+            android:inputType="text"
+            android:text="Ingresa tu nombre completo" />
+
+        <TextView
+            android:id="@+id/apodo"
+            style="@style/textregis1"
+            android:text="Usuario" />
+
+        <EditText
+            android:id="@+id/casillapodo"
+            style="@style/textregis2"
+            android:inputType="text"
+            android:text="Como quieres que te llamemos" />
+
+        <TextView
+            android:id="@+id/correo"
+            style="@style/textregis1"
+            android:text="Correo" />
+
+        <EditText
+            android:id="@+id/casillacorreo"
+            style="@style/textregis2"
+            android:inputType="text"
+            android:text="Escribe tu correo electronico personal" />
+
+        <TextView
+            android:id="@+id/contraregis"
+            style="@style/textregis1"
+
+            android:text="Contraseña" />
+
+        <EditText
+            android:id="@+id/casillacontraregis"
+            style="@style/textregis2"
+            android:inputType="text"
+            android:text="Mayuscula, número y caracter especial" />
+
+
+        <TextView
+            android:id="@+id/repiteconra"
+            style="@style/textregis1"
+            android:text="Repite la Contraseña" />
+
+        <EditText
+            android:id="@+id/casiilarepitecontr"
+            style="@style/textregis2"
+            android:inputType="textPassword"
+            android:text="" />
+
+        <Button
+            android:id="@+id/ingresoapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:backgroundTint="#FF54AFF8"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="50dp"
+            android:onClick="onClick"
+            android:text="Ingresar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

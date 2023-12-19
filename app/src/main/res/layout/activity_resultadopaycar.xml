@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resultadopaycar">
+
+    <ImageView
+        android:id="@+id/Fondopantalla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_verde2" />
+
+    <ImageView
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/devolver"
+        android:onClick="onClick3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="50dp"
+            android:text="PAPEL Y CARTON" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="35dp"
+            android:layout_marginBottom="-35dp"
+            app:columnCount="2"
+            app:rowCount="3"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjetotalkg"
+                style="@style/cardresullef"
+                app:layout_row="0"
+                app:layout_column="0"
+                >
+
+                <TextView
+                    android:id="@+id/totrella"
+                    style="@style/textresul1"
+                    android:text="Total Reciclado" />
+
+                <TextView
+                    android:id="@+id/kilotota"
+                    style="@style/textresul2"
+                    android:text="0 Kg" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjetotapes"
+                style="@style/cardresulrig"
+                app:layout_row="0"
+                app:layout_column="1"
+                >
+
+                <TextView
+                    android:id="@+id/totpesla"
+                    style="@style/textresul1"
+                    android:text="Tus Ganancias" />
+
+                <TextView
+                    android:id="@+id/ganantota"
+                    style="@style/textresul2"
+                    android:text="$ 0" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjeproganmes"
+                style="@style/cardresulrig"
+                app:layout_row="1"
+                app:layout_column="1"
+                >
+
+                <TextView
+                    android:id="@+id/proganla"
+                    style="@style/textresul1"
+                    android:text="Promedio Ganancias por Mes" />
+
+                <TextView
+                    android:id="@+id/proganpes"
+                    style="@style/textresul2"
+                    android:text="$ 0" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjeproremes"
+                style="@style/cardresullef"
+                app:layout_row="1"
+                app:layout_column="0"
+                >
+
+                <TextView
+                    android:id="@+id/prorela"
+                    style="@style/textresul1"
+                    android:text="Promedio Reciclado por Mes" />
+
+                <TextView
+                    android:id="@+id/prompes"
+                    style="@style/textresul2"
+                    android:text="0 Kg" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjMaxi"
+                style="@style/cardresullef"
+                app:layout_column="0"
+                >
+
+                <TextView
+                    android:id="@+id/Maxila"
+                    style="@style/textresul1"
+                    android:text="Maximo Reciclado" />
+
+                <TextView
+                    android:id="@+id/Maxi"
+                    style="@style/textresul2"
+                    android:text="0 Kg" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarjmini"
+                style="@style/cardresulrig"
+                app:layout_row="2"
+                app:layout_column="1"
+                >
+
+                <TextView
+                    android:id="@+id/minila"
+                    style="@style/textresul1"
+                    android:text="Minimo Reciclado" />
+
+                <TextView
+                    android:id="@+id/mini"
+                    style="@style/textresul2"
+                    android:text="$ 0" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <Button
+            android:id="@+id/botverpape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="#FF54AFF8"
+            android:text="Ver resultados de Plastico"
+            android:onClick="onClick"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/bottips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="#FF54AFF8"
+            android:text="Quieres Ganar Mas"
+            android:onClick="onClick2"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

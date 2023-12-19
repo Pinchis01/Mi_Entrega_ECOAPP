@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Fondopantalla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_verde2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="60dp"
+            android:text="APPRECICLAR" />
+
+        <TextView
+            android:id="@+id/Usuario"
+            style="@style/textregis1"
+
+            android:text="Usuario" />
+
+        <EditText
+            android:id="@+id/casillauser"
+            style="@style/textregis2"
+            android:inputType="text"
+            android:text="Ingresa tu Usuario" />
+
+        <TextView
+            android:id="@+id/contraseña"
+            style="@style/textregis1"
+            android:text="Contraseña" />
+
+        <EditText
+            android:id="@+id/casillacontras"
+            style="@style/textregis2"
+            android:inputType="textPassword"
+            android:text="holamundo" />
+
+        <Button
+            android:id="@+id/ingreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:backgroundTint="#FF54AFF8"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="50dp"
+            android:onClick="onClick"
+            android:text="Ingresar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/olvidecontra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="left"
+                android:text="Olvidé la Contraseña"
+                android:textColor="#1B38DA"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="right"
+                android:text="Registrate"
+                android:textColor="#E3364A"
+                android:textSize="15dp"
+                android:onClick="onClick2"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

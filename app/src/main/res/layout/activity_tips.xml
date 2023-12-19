@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tips">
+
+    <ImageView
+        android:id="@+id/Fondopantalla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_verde2" />
+
+    <ImageView
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="5"
+        android:scaleY="5"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/devolver"
+        android:onClick="onClick"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="TIPS"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        >
+
+                <androidx.cardview.widget.CardView
+                android:id="@+id/tarje1concejo"
+                style="@style/Cardtips"
+                >
+
+                    <TextView
+                        android:id="@+id/concejo1la"
+                        style="@style/texttips1"
+                        android:text="Consejo del Día"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/numconcejo1"
+            style="@style/texttipsnum"
+            android:text="1"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/numconcejo2"
+                style="@style/texttipsnum"
+                android:text="2"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarje2concejo"
+                style="@style/Cardtips"
+                >
+
+                <TextView
+                    android:id="@+id/concejo2la"
+                    style="@style/texttips2"
+                    android:text="Aprende a usar las 3R"
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarje3concejo"
+                style="@style/Cardtips"
+                >
+
+                <TextView
+                    android:id="@+id/concejo3la"
+                    style="@style/texttips1"
+                    android:text="Porque reciclar paga"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/numconcejo3"
+                style="@style/texttipsnum"
+                android:text="3"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/numconcejo4"
+                style="@style/texttipsnum"
+                android:text="4"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tarje4concejo"
+                style="@style/Cardtips"
+                >
+
+                <TextView
+                    android:id="@+id/concejo4la"
+                    style="@style/texttips2"
+                    android:text="Menos basura Mas dinero"
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

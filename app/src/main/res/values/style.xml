@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="cardresullef" parent="CardView">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="layout_gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="cardBackgroundColor">#803099ED</item>
+    </style>
+
+    <style name="cardresulrig" parent="CardView">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="layout_gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="cardBackgroundColor">#803099ED</item>
+    </style>
+
+    <style name="Cardmenu" parent="CardView">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">#6B92EAAA</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="layout_gravity">center</item>
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+    </style>
+
+    <style name="textresul1" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="textresul2" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">42dp</item>
+    </style>
+
+    <style name="textregis1" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="textregis2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColor">#C3C0C0</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+
+    <style name="Cardtips">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="cardBackgroundColor">#6B5AA3C5</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="layout_gravity">center</item>
+    </style>
+
+    <style name="texttips1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:gravity">center|end</item>
+    </style>
+
+    <style name="texttips2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+
+    <style name="texttipsnum">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">80dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    </resources>
